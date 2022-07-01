@@ -19,22 +19,33 @@ int main()
 
 	switch (oper)
 	{
+			
+	//Addition.
+			
 	case '+':
 		cout << x << " + " << y << " = " << x + y;
 		break;
 
+	//Subtraction.
+			
 	case '-':
 		cout << x << " - " << y << " = " << x - y;
 		break;
-
+			
+	//Multiplication.
+			
 	case '*':
 		cout << x << " * " << y << " = " << x * y;
 		break;
-
+			
+	//Division.
+			
 	case '/':
 		cout << x << " / " << y << " = " << x / y;
 		break;
-
+			
+	//Error message.
+			
 	default:
 		cout << "Error, chosen operator is not listed.";
 		break;
