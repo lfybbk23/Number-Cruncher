@@ -7,8 +7,8 @@ int main()
 	char oper;
 	float x;
 	cout << "Please choose an operator." << endl;
-	cout << "^,|" << endl;
-	cout << "'^' - Quadratic exponent, '|' - Square root" << endl;
+	cout << "|" << endl;
+	cout << " '|' - Square root" << endl;
 	cout << "Operator:" << endl;
 	//User enters operator needed.
 	cin >> oper;
@@ -19,11 +19,6 @@ int main()
 
 	switch (oper)
 	{	
-		//Exponent operator calculating.
-			
-	case '^':
-		cout << "Quadratic exponent of number " << x << " = " << x * x;
-		break;
 			
 		//Square root operator calculating.
 			
