@@ -7,45 +7,50 @@ int main()
 	char oper;
 	float x, y;
 	cout << "Please choose an operator." << endl;
-	cout << "+,-,*,/" << endl;
-	cout << " '+' - Add, '-' - Subtract, '*' - Multiply, '/' - Divide." << endl;
+	cout << "+,-,*,/,^" << endl;
+	cout << " '+' - Add, '-' - Subtract, '*' - Multiply, '/' - Divide, '^' - Exponent." << endl;
 	cout << "Operator:" << endl;
 	cin >> oper;
 	cout << "Choose two numbers." << endl;
-	cout << "First number:" << endl;
+	cout << "First number(base):" << endl;
 	cin >> x;
-	cout << "Secound number." << endl;
+	cout << "Secound number(exponent)." << endl;
 	cin >> y;
 
 	switch (oper)
 	{
-			
-	//Addition.
-			
+
+		//Addition.
+
 	case '+':
 		cout << x << " + " << y << " = " << x + y;
 		break;
 
-	//Subtraction.
-			
+		//Subtraction.
+
 	case '-':
 		cout << x << " - " << y << " = " << x - y;
 		break;
-			
-	//Multiplication.
-			
+
+		//Multiplication.
+
 	case '*':
 		cout << x << " * " << y << " = " << x * y;
 		break;
-			
-	//Division.
-			
+
+		//Division.
+
 	case '/':
 		cout << x << " / " << y << " = " << x / y;
 		break;
-			
-	//Error message.
-			
+
+		//Exponent.
+
+	case '^':
+		cout << x << "^" << y << " = " << pow(x, y);
+			break;
+		//Error message.
+
 	default:
 		cout << "Error, chosen operator is not listed.";
 		break;
